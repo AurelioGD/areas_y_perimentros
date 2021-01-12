@@ -1,46 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Areas Y Perimetros</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Areas Y Perimetros</h1>
     <div class="menu-container">
-        <div class="menu-item cuadrado">
-            <h2>Cuadrado</h2>
-            <img src="img-fig/cuadrado.png" alt="">
-            <a href="">Area</a>
-            <a href="">Perimetro</a>
-        </div>
-        <div class="menu-item">
-
-        </div>
-        <div class="menu-item">
-
-        </div>
-        <div class="menu-item">
-
-        </div>
-        <div class="menu-item">
-
-        </div>
-        <div class="menu-item">
-
-        </div>
-        <div id="cosa"class="menu-item">
-
-        </div>
-        <div class="menu-item">
-
-        </div>
+      <div class="menu-item cuadrado">
+        <h2>Cuadrado</h2>
+        <img src="img-fig/cuadrado.png" alt="" />
+        <a href="">Area</a>
+        <a href="">Perimetro</a>
+      </div>
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+      <div id="cosa" class="menu-item"></div>
+      <div class="menu-item"></div>
     </div>
     <div class="solve">
-
+      <div class="solve-container solve-cuadrado">
+        <h2>Area del cuadrado</h2>
+        <div class="card-container">
+          <div class="img-container">
+            <img src="img-fig/cuadrado.png" alt="">
+            <p>Formula:</p>
+          </div>
+          <div class="form-container">
+            <form action="">
+                <label for="lado1">Lado 1:</label>
+                <input type="text" id="areaCuadrado-lado1">
+                <label for="lado2">Lado 2:</label>
+                <input type="text" id="areaCuadrado-lado2">
+                <input type="button" value="Obtener resultado" id="SendData">
+            </form>
+            <div class="form-result">
+                <label for="result-label">Resultado:</label>
+                <p id="result-areaCuadrado"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="solve-container"></div>
+      <div class="solve-container"></div>
+      <div class="solve-container"></div>
+      <div class="solve-container"></div>
+      <div class="solve-container"></div>
+      <div class="solve-container"></div>
+      <div class="solve-container"></div>
+      <div class="solve-container"></div>
+      <div class="solve-container"></div>
+      <div class="solve-container"></div>
+      <div class="solve-container"></div>
+      <div class="solve-container"></div>
+      <div class="solve-container"></div>
+      <div class="solve-container"></div>
+      <div class="solve-container"></div>
     </div>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
