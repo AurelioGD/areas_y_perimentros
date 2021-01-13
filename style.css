@@ -65,17 +65,42 @@ h2{
     align-items: center;
 }
 .solve-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4vh 1fr;
+    grid-template-areas: 
+    "title title"
+    "img form"
+    ;
     margin: 12vh;
     border: 2px solid white;
     width: 90vh;
     height: 70vh;
 }
+.solve-container h2{
+    grid-area: title;
+}
+.solve-container .img-container{
+    grid-area: img;
+}
+.solve-container .form-container{
+    grid-area: form;
+}
 .card-container{
     display: flex;
     justify-content: space-evenly;
 }
+label,input{
+    margin-bottom: 5vh;
+    font-size: 2.5vh;
+}
+.img-container p{
+    font-size: 2.5vh;
+}
+form,.form-result{
+    width: 35vh;
+}
 .form-container{
-    width: 50%;
     padding: 2vh;
     margin: 2vh;
 }
@@ -88,4 +113,17 @@ h2{
     width: 20vh;
     height: 20vh;
 
+}
+.img-container p{
+    align-self: flex-start;
+}
+h2{
+    text-align: center;
+    width: 100%;
+}
+.img-container,.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }

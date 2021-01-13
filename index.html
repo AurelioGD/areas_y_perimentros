@@ -20,7 +20,7 @@
       <div class="menu-item cuadrado">
         <h2>Cuadrado</h2>
         <img src="img-fig/cuadrado.png" alt="" />
-        <a href="">Area</a>
+        <a href="#solve-area-cuadrado">Area</a>
         <a href="">Perimetro</a>
       </div>
       <div class="menu-item"></div>
@@ -31,7 +31,14 @@
       <div id="cosa" class="menu-item"></div>
       <div class="menu-item"></div>
     </div>
+
+
+
+
+
+
     <div class="solve">
+      <p id="solve-area-cuadrado"></p>
       <div class="solve-container solve-cuadrado">
         <h2>Area del cuadrado</h2>
         <div class="card-container">
@@ -54,21 +61,32 @@
           </div>
         </div>
       </div>
-      <div class="solve-container"></div>
-      <div class="solve-container"></div>
-      <div class="solve-container"></div>
-      <div class="solve-container"></div>
-      <div class="solve-container"></div>
-      <div class="solve-container"></div>
-      <div class="solve-container"></div>
-      <div class="solve-container"></div>
-      <div class="solve-container"></div>
-      <div class="solve-container"></div>
-      <div class="solve-container"></div>
-      <div class="solve-container"></div>
-      <div class="solve-container"></div>
-      <div class="solve-container"></div>
-      <div class="solve-container"></div>
+
+
+      <p id="solve-perimetro-cuadrado"></p>
+      <div class="solve-container solve-cuadrado">
+        <h2>Perimetro del cuadrado</h2>
+        <div class="card-container">
+          <div class="img-container">
+            <img src="img-fig/cuadrado.png" alt="">
+            <p>Formula:</p>
+          </div>
+          <div class="form-container">
+            <form action="">
+                <label for="lado">Lado:</label>
+                <input type="text" id="areaCuadrado-lado1">
+                <label for="lado2">Lado 2:</label>
+                <input type="text" id="areaCuadrado-lado2">
+                <input type="button" value="Obtener resultado" id="SendData">
+            </form>
+            <div class="form-result">
+                <label for="result-label">Resultado:</label>
+                <p id="result-areaCuadrado"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
     <script src="app.js"></script>
   </body>
